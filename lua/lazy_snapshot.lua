@@ -1,5 +1,6 @@
 return {
   { "AstroNvim/astrotheme",                        version = "^1.1" },
+  { "simrat39/rust-tools.nvim" },
   { "JoosepAlviste/nvim-ts-context-commentstring", commit = "729d83ecb990dc2b30272833c213cc6d49ed5214" },
   { "L3MON4D3/LuaSnip",                            version = "^1" },
   { "MunifTanjim/nui.nvim",                        commit = "1f43b13d133eb4b4f53a4485379d9afa58808389" },
@@ -23,7 +24,7 @@ return {
   { "kevinhwang91/nvim-ufo",                       version = "^1" },
   { "kevinhwang91/promise-async",                  version = "^1" },
   { "lewis6991/gitsigns.nvim",                     version = "^0.6" },
-  { "wakatime/vim-wakatime" }
+  { "wakatime/vim-wakatime" },
   { "lukas-reineke/indent-blankline.nvim",         version = "^2" },
   { "max397574/better-escape.nvim",                commit = "426d29708064d5b1bfbb040424651c92af1f3f64" },
   { "mfussenegger/nvim-dap",                       version = "^0.5" },
