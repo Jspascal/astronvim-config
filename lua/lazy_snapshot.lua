@@ -3,6 +3,7 @@ return {
   { "simrat39/rust-tools.nvim" },
   { 'wbthomason/packer.nvim' },
   { "wakatime/vim-wakatime" },
+  { "catppuccin/nvim", name = "catppuccin" },
   { "JoosepAlviste/nvim-ts-context-commentstring", commit = "729d83ecb990dc2b30272833c213cc6d49ed5214" },
   { "L3MON4D3/LuaSnip",                            version = "^1" },
   { "MunifTanjim/nui.nvim",                        commit = "1f43b13d133eb4b4f53a4485379d9afa58808389" },
