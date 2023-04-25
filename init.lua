@@ -32,7 +32,7 @@ if astronvim.default_colorscheme then
     }, 
   })
 
-  vim.cmd.colorscheme "catppuccin"
+  vim.cmd.colorscheme "catppuccin-macchiato"
 end
 
 require("astronvim.utils").conditional_func(astronvim.user_opts("polish", nil, false), true)
