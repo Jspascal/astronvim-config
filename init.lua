@@ -34,6 +34,11 @@ if astronvim.default_colorscheme then
 
   vim.cmd.colorscheme "catppuccin-macchiato"
 end
+polish = function()
+  require("notify").setup({
+  background_colour = "#1a1b26",
+  })
+  end
 
 require("astronvim.utils").conditional_func(astronvim.user_opts("polish", nil, false), true)
 

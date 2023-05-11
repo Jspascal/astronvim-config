@@ -28,7 +28,8 @@ vim.cmd([[
 return require("packer").startup({
 	function(use)
 		use("wbthomason/packer.nvim")
-
+		
+		use { "tzachar/cmp-tabnine", run = "./install.sh" }
 		if packer_bootstrap then
 			require("packer").sync()
 		end

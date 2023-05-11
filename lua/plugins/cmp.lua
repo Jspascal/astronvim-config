@@ -23,6 +23,21 @@ return {
         border = "single",
         winhighlight = "Normal:Normal,FloatBorder:FloatBorder,CursorLine:Visual,Search:None",
       }
+      local tabnine = require('cmp_tabnine.config')
+
+      tabnine:setup({
+	    max_lines = 1000,
+	    max_num_results = 20,
+	    sort = true,
+	    run_on_every_keystroke = true,
+	    snippet_placeholder = '..',
+	    ignored_file_types = {
+		    -- default is not to ignore
+		    -- uncomment to ignore in lua:
+		    -- lua = true
+	    },
+	    show_prediction_strength = false
+      })
 
       local function has_words_before()
         local line, col = unpack(vim.api.nvim_win_get_cursor(0))
@@ -57,6 +72,7 @@ return {
           completion = cmp.config.window.bordered(border_opts),
           documentation = cmp.config.window.bordered(border_opts),
         },
+        
         mapping = {
           ["<Up>"] = cmp.mapping.select_prev_item { behavior = cmp.SelectBehavior.Select },
           ["<Down>"] = cmp.mapping.select_next_item { behavior = cmp.SelectBehavior.Select },
@@ -96,8 +112,11 @@ return {
           { name = "luasnip", priority = 750 },
           { name = "buffer", priority = 500 },
           { name = "path", priority = 250 },
+          { name = "cmp_tabnine" },
         },
       }
+
+      
     end,
   },
 }
