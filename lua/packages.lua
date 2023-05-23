@@ -26,8 +26,9 @@ return require('packer').startup(function(use)
     default_url_format = 'https://github.com/%s'
   },
 
-  use 'wakatime/vim-wakatime'
-  use { "tzachar/cmp-tabnine", run = "./install.sh" }
+  use 'wakatime/vim-wakatime',
+  use { "tzachar/cmp-tabnine", run = "./install.sh" },
+  use 'karb94/neoscroll.nvim'
 
 
 end)

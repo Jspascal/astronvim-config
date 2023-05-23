@@ -56,4 +56,5 @@ return {
   { "tzachar/cmp-tabnine", build = "./install.sh", dependencies = 'hrsh7th/nvim-cmp', },
   { "theHamsta/nvim-dap-virtual-text" },
   { "mfussenegger/nvim-dap-python" },
+  { "karb94/neoscroll.nvim"},
 }

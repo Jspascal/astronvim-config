@@ -40,6 +40,7 @@ polish = function()
   })
   end
 
+require('neoscroll').setup()
 require("astronvim.utils").conditional_func(astronvim.user_opts("polish", nil, false), true)
 
 require("packages")
