@@ -40,6 +40,24 @@ polish = function()
   })
   end
 
+require'nvim-treesitter.configs'.setup {
+  autotag = {
+    enable = true,
+  }
+}
+require('nvim-ts-autotag').setup()
+vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(
+    vim.lsp.diagnostic.on_publish_diagnostics,
+    {
+        underline = true,
+        virtual_text = {
+            spacing = 5,
+            severity_limit = 'Warning',
+        },
+        update_in_insert = true,
+    }
+)
+
 require('neoscroll').setup()
 require("astronvim.utils").conditional_func(astronvim.user_opts("polish", nil, false), true)
 

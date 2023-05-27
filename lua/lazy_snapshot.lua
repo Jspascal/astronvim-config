@@ -57,4 +57,6 @@ return {
   { "theHamsta/nvim-dap-virtual-text" },
   { "mfussenegger/nvim-dap-python" },
   { "karb94/neoscroll.nvim"},
+  { "windwp/nvim-ts-autotag" },
+  { "jghauser/mkdir.nvim" },
 }
