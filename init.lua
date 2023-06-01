@@ -14,48 +14,48 @@ end
 
 if astronvim.default_colorscheme then
   require("catppuccin").setup({
-    flavour = "macchiato", 
-    background = { 
-        light = "latte",
-        dark = "mocha",
+    flavour = "macchiato",
+    background = {
+      light = "latte",
+      dark = "latte",
     },
     transparent_background = true,
-   
+
     integrations = {
-        cmp = true,
-        gitsigns = true,
-        nvimtree = true,
-        telescope = true,
-        notify = false,
-        mini = false,
-        
-    }, 
+      cmp = true,
+      gitsigns = true,
+      nvimtree = true,
+      telescope = true,
+      notify = false,
+      mini = false,
+
+    },
   })
 
-  vim.cmd.colorscheme "catppuccin-macchiato"
+  vim.cmd.colorscheme "catppuccin-latte"
 end
 polish = function()
   require("notify").setup({
-  background_colour = "#1a1b26",
+    background_colour = "#1a1b26",
   })
-  end
+end
 
-require'nvim-treesitter.configs'.setup {
+require 'nvim-treesitter.configs'.setup {
   autotag = {
     enable = true,
   }
 }
 require('nvim-ts-autotag').setup()
 vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(
-    vim.lsp.diagnostic.on_publish_diagnostics,
-    {
-        underline = true,
-        virtual_text = {
-            spacing = 5,
-            severity_limit = 'Warning',
-        },
-        update_in_insert = true,
-    }
+  vim.lsp.diagnostic.on_publish_diagnostics,
+  {
+    underline = true,
+    virtual_text = {
+      spacing = 5,
+      severity_limit = 'Warning',
+    },
+    update_in_insert = true,
+  }
 )
 
 require('neoscroll').setup()
