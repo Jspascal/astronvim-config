@@ -53,8 +53,8 @@ return {
   { "windwp/nvim-autopairs",                       commit = "0fd6519d44eac3a6736aafdb3fe9da916c3701d4" },
   { "windwp/nvim-ts-autotag",                      commit = "25698e4033cd6cd3745454bfc837dd670eba0480" },
   { "amrbashir/nvim-docs-view" },
-  { "tzachar/cmp-tabnine",                         build = "./install.sh",                             dependencies =
-  'hrsh7th/nvim-cmp', },
+  -- { "tzachar/cmp-tabnine",                         build = "./install.sh",                             dependencies =
+  -- 'hrsh7th/nvim-cmp', },
   { "theHamsta/nvim-dap-virtual-text" },
   { "mfussenegger/nvim-dap-python" },
   { "karb94/neoscroll.nvim" },
